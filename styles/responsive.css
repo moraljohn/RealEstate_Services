@@ -1,0 +1,287 @@
+@media (max-width: 1426px) {
+  .excellence-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1404px) {
+  .marketing-strategy-text h4 {
+    font-size: 32px;
+  }
+
+  .marketing-strategy-text h5 {
+    font-size: 12px;
+  }
+
+  .marketing-strategy-text p {
+    font-size: 12px;
+  }
+
+  .marketing-strategy-text.luxury p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1379px) {
+  .market-strategy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .marketing-img.luxury {
+    transform: translate(0, 0);
+  }
+
+  .marketing-img {
+    transform: translate(0, -10%);
+  }
+
+  .marketing-strategy-text h4 {
+    font-size: 34px;
+  }
+
+  .marketing-strategy-text h5 {
+    font-size: 18px;
+  }
+
+  .marketing-strategy-text p {
+    font-size: 16px;
+  }
+
+  .marketing-strategy-text.luxury p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1306px) {
+  .steps-grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+  }
+
+  .services-right {
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 1264px) {
+  .exposure-grid {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+  }
+
+  .exposure-card.luxury:not(:last-child) {
+    border-right: none;
+  }
+}
+
+@media (max-width: 1248px) {
+  .work-card-2 {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 1212px) {
+  .process-text-container {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+}
+
+@media (max-width: 1168px) {
+  .work-card-2 {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .work-card-text {
+    padding: 30px;
+  }
+
+  .work-card-image {
+    flex: 2;
+  }
+}
+
+@media (max-width: 1139px) {
+  .card-group {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1074px) {
+  .steps-grid-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .services-right {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 1072px) {
+  .process-text-container {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    row-gap: 70px;
+  }
+}
+
+@media (max-width: 998px) {
+  .excellence-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 992px) {
+  .process {
+    grid-template-columns: 1fr;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .steps-grid.buy {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0;
+  }
+}
+
+@media (max-width: 954px) {
+  .services-behind-text h4 {
+    font-size: 22px;
+  }
+
+  .services-behind-text ul li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 918px) {
+  .process-text-container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 884px) {
+  .brands {
+    width: 700px;
+  }
+}
+
+@media (max-width: 874px) {
+  .exposure-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 872px) {
+  .market-content-container {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+}
+
+@media (max-width: 846px) {
+  .services-behind-text h4 {
+    font-size: 20px;
+  }
+
+  .services-behind-text ul li {
+    font-size: 12px;
+  }
+
+  .exposure-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 776px) {
+  .steps-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .work-with-us-text p {
+    width: 600px;
+  }
+}
+
+@media (max-width: 743px) {
+  .services-behind-text h4 {
+    font-size: 18px;
+  }
+
+  .services-behind-text ul li {
+    font-size: 10px;
+  }
+
+  .card-group {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 50px 50px;
+  }
+}
+
+@media (max-width: 719px) {
+
+}
+
+@media (max-width: 715px) {
+  .card-group {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 712px) {
+  .brands {
+    width: 600px;
+  }
+}
+
+@media (max-width: 690px) {
+  .information-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 682px) {
+  .brands {
+    width: 500px;
+  }
+}
+
+@media (max-width: 654px) {
+  .services-behind-text h4 {
+    font-size: 16px;
+  }
+
+  .services-behind-text ul li {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 560px) {
+  .services-behind-text h4 {
+    font-size: 16px;
+  }
+
+  .services-behind-text ul li {
+    font-size: 6px;
+  }
+}

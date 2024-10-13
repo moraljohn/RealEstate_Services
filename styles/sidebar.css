@@ -1,0 +1,138 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -450px;
+  width: 350px;
+  background-color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  transition: right 0.5s, width 0.5s;
+}
+
+.sidebar-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 50px;
+  font-size: 16px;
+  display: none;
+}
+
+.sidebar-menu-center {
+  list-style-type: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 40%;
+  width: 100%;
+  font-size: 26px;
+  text-align: center;
+  display: block;
+}
+
+.sidebar-menu-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 10px 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: width 0.3s, height 0.3s;
+}
+
+.sidebar-menu-close-icon {
+  width: 30px;
+  transition: width 0.3s;
+}
+
+.sidebar-menu-close-icon:hover {
+  width: 40px;
+}
+
+.sidebar-menu li {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: margin-left 0.3s;
+}
+
+.sidebar-menu li:hover {
+  margin-left: 8px;
+}
+
+.sidebar-menu-center li {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: margin-left 0.3s;
+}
+
+.sidebar-menu-center li:hover {
+  margin-left: 8px;
+}
+
+.sidebar-header {
+  display: none;
+  list-style-type: none;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-header li {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: margin-left 0.3s;
+}
+
+.sidebar-header li:hover {
+  margin-left: 8px;
+}
+
+.middle-section ul li {
+  padding-right: 16px;
+}
+
+@media (max-width: 1520px) {
+  .middle-section ul li {
+    padding-right: 12px;
+  }
+}
+
+@media (max-width: 1487px) {
+  .middle-section ul li {
+    padding-right: 8px;
+    font-size: 12px;
+  }
+}
+
+
+
+@media (max-width: 1394px) {
+  .middle-section {
+    display: none;
+  }
+
+  .sidebar-header {
+    display: block;
+  }
+
+  .sidebar-menu-center {
+    display: none;
+  }
+
+  .sidebar-menu {
+    display: block;
+  }
+
+  .sidebar {
+    width: 350px;
+  }
+
+  .search {
+    right: 100px;
+  }
+}

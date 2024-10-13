@@ -1,0 +1,890 @@
+.see-more-contents {
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.bg-lblue {
+  background-color: lightblue;
+}
+
+.bg-lpink {
+  background-color: lightpink;
+}
+
+.see-more-contents h2 {
+  font-style: normal;
+  font-size: 43px;
+  font-weight: 400;
+  color: black;
+}
+
+
+
+
+
+
+
+
+.card-group {
+  margin-left: 60px;
+  margin-right: 60px;
+  /* box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2); */
+  padding: 50px 80px;
+  border-radius: 10px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.card-item {
+  box-shadow: 1px 1px 5px rgba(166, 125, 68, 0.9);
+  padding: 8px 12px;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons {
+  width: 200px;
+}
+
+.card-item-icon {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-item-text {
+  display: flex;
+  flex: 8;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-item-text h4 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.card-item-text p {
+  font-family: Karla;
+  margin-bottom: 30px;
+}
+
+
+
+.work-card-1 {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.work-card-2 {
+  background-color: white;
+  margin-left: 150px;
+  margin-right: 150px;
+
+  display: flex;
+  height: 600px;
+  transition: margin-left 0.3s, margin-right 0.3s;
+}
+
+.work-card-1::before {
+  content: '';
+  position: absolute;
+  top: 13%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 75%;
+  background-color: rgba(166, 125, 68, 0.3);
+  z-index: -1;
+}
+
+.work-card-image {
+  background-image: url('../images/page-3\ \(1\).png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  border-radius: 10px;
+}
+
+.work-card-text {
+  padding: 50px;
+  flex: 1;
+  font-family: Karla;
+  color: black;
+  font-size: 26px;
+  text-align: justify;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+
+.services-container {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.services-container::before {
+  content: '';
+  position: absolute;
+  top: 13%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 75%;
+  background-color: rgba(137, 148, 129, 0.7);
+  z-index: -1;
+}
+
+.services {
+  display: flex;
+  /* background-color: rgba(137, 148, 129, 0.9); */
+}
+
+.services-left {
+  flex: 1;
+}
+
+.services-right {
+  flex: 2;
+  padding: 20px 100px 20px 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  transition: padding-right 0.3s;
+}
+
+.services-card {
+  border-radius: 10px;
+  position: relative;
+}
+
+.services-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: opacity 0.5s ease;
+}
+
+.services-img-text {
+  position: absolute;
+  top: -18px;
+  left: 20px;
+  color: white;
+  font-weight: 700;
+  /* background-color: rgb(196, 196, 196); */
+  padding: 1px 5px;
+  border-radius: 8px;
+  font-size: 25px;
+  transition: opacity 0.5s ease;
+}
+
+.services-behind-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-weight: bold;
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.services-behind-text h4 {
+  font-style: normal;
+  font-weight: 500;
+  transition: opacity 0.5s ease;
+  font-size: 26px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.services-behind-text ul li {
+  text-align: left;
+  font-size: 18px;
+  color: white;
+}
+
+.services-card:nth-child(1):hover .services-img,
+.services-card:nth-child(3):hover .services-img {
+  opacity: 0;
+}
+
+.services-card:nth-child(1):hover .services-img-text,
+.services-card:nth-child(3):hover .services-img-text {
+  opacity: 0;
+}
+
+.services-card:nth-child(1):hover .services-behind-text,
+.services-card:nth-child(3):hover .services-behind-text {
+  opacity: 1;
+}
+
+
+
+
+
+.process-text-container {
+  margin-bottom: 100px;
+  text-align: center;
+  margin-left: 230px;
+  margin-right: 230px;
+}
+
+.process-intro-text h4 {
+  font-size: 48px;
+  font-size: normal;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.process-intro-description p {
+  font-size: 18px;
+  word-spacing: 10px;
+}
+
+
+
+
+
+
+.process {
+  background-color: rgba(166, 125, 68, 0.4);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.process-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.process-img-container.buy {
+  background-color: rgba(221, 215, 210, 0.9);
+}
+
+.process-img {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.process-text {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-left: 40px;
+}
+
+.process-text.buy {
+  background-color: rgba(221, 215, 210, 0.9);
+}
+
+.process-text.buy h4 {
+  color: black;
+}
+
+.process h4 {
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.steps-grid-container {
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 80%;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  column-gap: 50px;
+  row-gap: 30px;
+  align-self: center;
+}
+
+.steps-grid.buy {
+  grid-template-columns: 1fr 1fr;
+}
+
+.steps-flex {
+  align-self: center;
+  justify-self: center;
+  background-color: rgb(237, 234, 231);
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 150px;
+  border-radius: 80px;
+  padding: 7px;
+  font-family: Karla;
+  box-shadow: 1px 1px 5px rgba(166, 125, 68, 0.9);
+}
+
+.steps-flex.buy {
+  background-color: rgb(84, 84, 84);
+}
+
+.step-number {
+  align-self: center;
+  color: rgb(84, 84, 84);
+  font-size: 28px;
+  margin-top: 15px;
+  margin-bottom: 17px;
+  font-weight: 800;
+}
+
+.step-number.buy {
+  color: rgb(237, 234, 231);
+}
+
+.step-text {
+  align-self: center;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgb(84, 84, 84);
+  font-weight: 500;
+}
+
+.step-text.buy {
+  color: rgb(237, 234, 231);
+}
+
+
+
+.excellence-container {
+  /* background-color: lightpink; */
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+}
+
+.excellence-header {
+  /* text-align: center; */
+}
+
+.excellence-header h4 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+}
+
+
+.excellence-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 40px;
+}
+
+.excellence-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.excellence-img-container {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  width: 400px;
+  height: 400px;
+  /* height: 100%; */
+}
+
+.excellence-img {
+  width: 100%;
+  height: 100%;
+  /* width: 400px; */
+  object-fit: cover;
+}
+
+.excellence-grid .excellence-card:nth-child(2) .excellence-img {
+  object-position: left;
+}
+
+.excellence-card-title h4 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.excellence-card-description {
+  font-family: Karla;
+  word-spacing: 3px;
+  text-align: justify;
+}
+
+.excellence-card-description ul li {
+  word-spacing: normal;
+}
+
+.excellence-description-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 20px;
+  display: block;
+  margin: 30px;
+  text-align: center;
+  font-size: 22px;
+}
+
+
+
+
+
+.market-container {
+  background-color: rgba(93, 28, 52, 0.9);
+  padding-bottom: 1px;
+}
+
+.market-content-container {
+  margin-left: 300px;
+  margin-right: 300px;
+  /* background-color: lightgoldenrodyellow; */
+}
+
+.market-strategy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  transition: grid-template-columns 0.5s ease;
+}
+
+.marketing-strategy-img {
+  justify-self: center;
+}
+
+.marketing-img {
+  object-fit: contain;
+  width: 380px;
+  transform: translate(0, -20%);
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.marketing-img.luxury {
+  transform: translate(0, -10%);
+}
+
+.marketing-strategy-text {
+  color: white;
+}
+
+.marketing-strategy-text h4 {
+  width: 70%;
+  font-size: 34px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  transition: font-size 0.3s;
+}
+
+.marketing-strategy-text h5 {
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 10px;
+  transition: font-size 0.3s;
+}
+
+.marketing-strategy-text p {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: lighter;
+  text-align: justify;
+  transition: font-size 0.3s;
+  font-size: 20px;
+}
+
+
+
+.exposure-container {
+  padding: 20px 40px;
+  /* background-color: beige; */
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+.exposure-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 20px;
+}
+
+.exposure-card {
+  padding: 5px 40px;
+  box-shadow: 0px 1px 7px rgba(239, 233, 225, 0.5);
+  border-radius: 40px;
+  color: white;
+}
+
+.exposure-card h4 {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.exposure-card p {
+  text-align: justify;
+  font-family: Karla;
+}
+
+
+
+
+.partners-luxury-container {
+  margin-bottom: 0px;
+}
+
+.market-container.luxury {
+  background-color: rgba(137, 148, 129, 0.7);
+  margin-top: 0px;
+}
+
+.marketing-strategy-text.luxury p {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 100px;
+  color: black;
+  font-family: "Playfair Display", serif;
+}
+
+
+.exposure-container.luxury {
+  margin-bottom: 20px;
+}
+
+.exposure-grid.luxury {
+  column-gap: 0px;
+}
+
+.exposure-card.luxury {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+}
+
+.exposure-card.luxury:not(:last-child) {
+  border-right: 1px solid gray;
+  border-radius: 0px;
+}
+
+.exposure-card.luxury img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+  vertical-align: middle;
+}
+
+.exposure-card.luxury:nth-child(1) img {
+  max-width: 30%;
+  max-height: 100%;
+}
+
+.exposure-card.luxury:nth-child(2) img {
+  max-width: 40%;
+  max-height: 100%;
+}
+
+.exposure-card.luxury:nth-child(3) img {
+  max-width: 60%;
+  max-height: 100%;
+}
+
+.just-text {
+  text-align: center;
+}
+
+.just-text p {
+  text-align: center;
+}
+
+
+
+
+.work-with-us-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.30)), url('../images/work-with-us.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.work-with-us-header h1 {
+  font-size: 48px;
+  font-weight: 400;
+  position: relative;
+}
+
+.work-with-us-header h1::before {
+  position: absolute;
+  content: '';
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  background-color: white;
+  width: 80%;
+}
+
+.work-with-us-text {
+  margin-top: 20px;
+}
+
+.work-with-us-text p {
+  width: 700px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: Karla;
+}
+
+.contact-us-button {
+  padding: 20px;
+  border: 3px solid white;
+  background-color: transparent;
+  width: 150px;
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  margin-top: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-us-button:hover {
+  background-color: white;
+  color: black;
+}
+
+
+
+
+
+.footer-container {
+  padding: 20px 50px;
+  font-family: Karla;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.julie-hansen-partnership h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.julie-hansen-partnership p {
+  width: 520px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  line-height: 30px;
+}
+
+.information-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 50px;
+  column-gap: 30px;
+}
+
+.address-container h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.address-container p {
+  font-size: 17px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  line-height: 35px;
+}
+
+.address {
+  width: 90%;
+}
+
+.contact {
+  font-size: 17px !important;
+}
+
+.contact-info-container h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.contact-info-container a {
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.contact-info-container a:hover {
+  text-decoration: underline;
+}
+
+
+.icons-container {
+  position: relative;
+}
+
+.icons {
+  position: absolute;
+  top: 0;
+  padding: 0;
+  display: flex;
+  /* transform: translate(-250px, -50%); */
+}
+
+.icons a {
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.icons i {
+  display: block;
+  margin: 26px 0;
+  font-size: 30px;
+  color: black;
+  transition: all .50s ease;
+}
+
+.icons i:hover {
+  color: gray;
+}
+
+
+
+.footer-right {
+  flex: 1;
+}
+
+
+.footer-right-contents h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.subscribe-text {
+  width: 400px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  line-height: 30px;
+}
+
+.email-input {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 5px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.email-input::placeholder {
+  font-family: Karla;
+  font-size: 18px;
+}
+
+.email-input:focus {
+  outline: none;
+}
+
+.subscribe {
+  display: flex;
+  align-items: start;
+  margin-bottom: 10px;
+}
+
+.subscribe-checkbox {
+  align-self: self-start;
+}
+
+.subscribe p {
+  margin-top: 0;
+  padding-left: 5px;
+  padding-right: 0;
+  width: 100%;
+  text-align: justify;
+  font-size: 14px;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  line-height: 17px;
+}
+
+.subscribe-button {
+  padding: 20px 40px;
+  border: 2px solid black;
+  background: transparent;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-top: 20px;
+  
+}
+
+.subscribe-button:hover {
+  margin-left: 10px;
+  margin-top: 10px;
+}

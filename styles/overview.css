@@ -1,0 +1,210 @@
+.overview {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url(../images/photo-1565182999561-18d7dc61c393.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  transition: height 0.3s ease;
+}
+
+.overview-page-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+.overview-page-text h1 {
+  font-size: 90px;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.search {
+  width: 200px;
+  position: fixed;
+  right: 0;
+  bottom: 20px;
+  text-align: center;
+  transition: right 0.5s;
+  z-index: 999;
+  transition: right 0.3s;
+}
+
+.search-button {
+  padding: 10px 10px;
+  background-color: gray;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  opacity: 0.9;
+}
+
+.search-icon {
+  width: 40px;
+}
+
+.bubble-message {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: -40px;
+  right: 50%;
+  transform: translateX(50%);
+  background-color: #8b8b8b;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.bubble-message.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.search-bar-container {
+  background-color: lightgray;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  justify-content: space-between;
+  padding: 20px 20px;
+  z-index: 99;
+  height: 20px;
+
+  display: none;
+  transform: translateX(100%);
+  transition: transform 0.5s ease;
+}
+
+.search-bar-container.visible {
+  display: flex;
+  transform: translateX(0);
+}
+
+.search-bar-icon {
+  width: 24px;
+  margin-right: 6px;
+}
+
+.search-input {
+  background-color: transparent;
+  border: none;
+  width: 800px;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-input::placeholder {
+  font-family: Karla;
+  font-size: 16px;
+}
+
+.arrow-right-icon {
+  width: 30px;
+}
+
+.search-bar-search {
+  margin-left: 100px;
+
+  display: flex;
+}
+
+.search-bar-appointment {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  cursor: pointer;
+  font-family: Karla;
+  font-weight: 700;
+  color: rgb(118, 118, 118);
+  font-size: 17px;
+}
+
+.search-bar-appointment::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.search-bar-appointment:hover::before {
+  width: 100%;
+}
+
+.appointment-text {
+  margin-right: 10px;
+}
+
+.search-bar-appointment:hover::before {
+    width: 100%;
+}
+
+.appointment-text {
+    margin-right: 10px;
+}
+
+
+@media (max-width: 1200px) {
+  .search-input {
+      width: 600px;
+  }
+
+  .search-bar-search {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .search-input {
+    width: 400px;
+  }
+}
+
+@media (max-width: 784px) {
+  .search-input {
+    width: 200px;
+  }
+
+  .search-bar-search {
+    margin-left: 20px;
+  }
+
+  .search-bar-container {
+    justify-content: start;
+  }
+
+  .search-bar-appointment {
+    margin-left: 150px;
+  }
+}
+
+@media (max-width: 716px) {
+  .search-bar-appointment {
+    margin-left: 100px;
+  }
+}
